@@ -40,6 +40,15 @@ type Type struct {
 	// be notified when the API is synced with APIM.
 	NotifyMembers bool     `json:"notifyMembers"`
 	Members       []Member `json:"members"`
+	// +kubebuilder:validation:Optional
+	Roles *Roles "json:\"roles,omitempty\""
+}
+
+type Roles struct {
+	// Default role for Applications.
+	Application string `json:"APPLICATION,omitempty"`
+	// Default role for APIs.
+	API string `json:"API,omitempty"`
 }
 
 type Member struct {
