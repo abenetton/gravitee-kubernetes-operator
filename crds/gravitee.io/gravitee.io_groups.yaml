@@ -94,8 +94,10 @@ spec:
                 roles:
                   properties:
                     API:
+                      description: Default role for APIs.
                       type: string
                     APPLICATION:
+                      description: Default role for Applications.
                       type: string
                   type: object
               required:

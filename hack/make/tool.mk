@@ -30,7 +30,7 @@ install-go-tools: download ## Installs all required GO tools
 	@cd ./hack/tools && \
 	for item in $$(find . -mindepth 1 -type d); do \
 		pushd $${item} > /dev/null; \
-		TOOL=$$(grep -e '^tool ' go.mod | sed -e s'/tool //'); \
+		TOOL=$$(grep -e '^tool ' go.mod | sed -e s'/tool //' | tr -d '\r'); \
 		echo "Installing tool $${TOOL}"; \
 		GOBIN=$(LOCALBIN) go install $${TOOL} & \
 		popd > /dev/null; \

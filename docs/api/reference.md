@@ -1983,8 +1983,8 @@ _Appears in:_
 
 | Field | Description | Default | Validation |
 | --- | --- | --- | --- |
-| `APPLICATION` _string_ |  |  |  |
-| `API` _string_ |  |  |  |
+| `APPLICATION` _string_ | Default role for Applications. |  |  |
+| `API` _string_ | Default role for APIs. |  |  |
 
 
 #### Status
