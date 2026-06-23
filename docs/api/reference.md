@@ -904,6 +904,7 @@ _Appears in:_
 | `metadata` _object (keys:string, values:string)_ | Refer to Kubernetes API documentation for fields of `metadata`. |  | Optional: \{\} <br /> |
 | `apiKeys` _[ApiKeySpec](#apikeyspec) array_ |  |  | Optional: \{\} <br /> |
 | `consumerConfiguration` _[ConsumerConfiguration](#consumerconfiguration)_ |  |  | Optional: \{\} <br /> |
+| `apiKeyMode` _string_ |  |  | Optional: \{\} <br /> |
 
 
 #### SubscriptionStatus
@@ -3259,6 +3260,7 @@ _Appears in:_
 | `metadata` _object (keys:string, values:string)_ | Refer to Kubernetes API documentation for fields of `metadata`. |  | Optional: \{\} <br /> |
 | `apiKeys` _[ApiKeySpec](#apikeyspec) array_ |  |  | Optional: \{\} <br /> |
 | `consumerConfiguration` _[ConsumerConfiguration](#consumerconfiguration)_ |  |  | Optional: \{\} <br /> |
+| `apiKeyMode` _string_ |  |  | Optional: \{\} <br /> |
 
 
 

@@ -64,6 +64,8 @@ spec:
                   required:
                     - name
                   type: object
+                apiKeyMode:
+                  type: string
                 apiKeys:
                   items:
                     properties:
