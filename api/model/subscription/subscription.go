@@ -69,6 +69,8 @@ type Type struct {
 	ApiKeys []ApiKeySpec `json:"apiKeys,omitempty"`
 	// +kubebuilder:validation:Optional
 	ConsumerConfiguration *ConsumerConfiguration `json:"consumerConfiguration,omitempty"`
+	// +kubebuilder:validation:Optional
+	ApiKeyMode *string `json:"apiKeyMode,omitempty"`
 }
 
 type ApiRef struct {
